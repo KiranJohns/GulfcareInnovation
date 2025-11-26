@@ -236,7 +236,7 @@ background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255
   width: 1em;
   height: 1em;
   transform: translateY(100%);
-  background: #cbcfd5;
+  background: #c3c7ce;
 }
 
 .squares .square:nth-child(2) {
