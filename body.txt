@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gulfmedicareinnovation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+<header class="navbar">
+  <div class="container nav-container">
+    <div class="logo">
+      <img class="" src="assets/logo11.png" alt="GUD Logo">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+
+        <!-- Dropdown Menu -->
+   <li class="dropdown">
+  <a href="#">Products<span class="arrow">&#9660;</span></a>
+  <ul class="dropdown-menu">
+    <li><a href="#">Operation Theater</a></li>
+    <li><a href="#">Medical Scales</a></li>
+    <!-- <li><a href="#">Hospital Furniture</a></li> -->
+  </ul>
+</li>
+
+        <!-- <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li> -->
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- <div class="nav-icons">
+      <i class="fa fa-search"></i>
+      <i class="fa fa-shopping-cart"></i>
+    </div> -->
+  </div>
+</header>
+
+ 
+  <!-- Footer -->
+<footer>
+  <div class="container footer-content">
+      <div class="footer-section">
+      <div class="footer-logo-box">
+        <img src="assets/logo11.png" alt="Company Logo" />
+      </div>
+      <p>Delivering quality solutions with trust and innovation.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>Email: info@company.com</p>
+      <p>Phone: +91 98765 43210</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Gulfmedicareinnovation. All rights reserved.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | GulfMedicare Innovation</title>
+ <link rel="icon" type="image/png" href="assets/logo11.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+<style>
+/* Generic */
+
+body{
+    background:#e9eff0;
+    color:#333;
+}
+
+
+
+/***** BOX STYLE *****/
+.contact-box{
+    width:85%;
+    background:#fff;
+    margin:0 auto 30px auto;
+    border-radius:12px;
+    padding:35px;
+    box-shadow:0 6px 24px rgba(0,0,0,0.08);
+    margin-top: 2rem;
+}
+
+/***** BOX HEADINGS *****/
+.contact-box h2{
+    font-size:1.7rem;
+    color:#74B43E;
+    margin-bottom:15px;
+    
+}
+
+/***** CONTACT INFO BOX *****/
+.contact-info ul{
+    list-style:none;
+    font-size:1.1rem;
+    line-height:1.7;
+    
+}
+
+/***** CONTACT FORM BOX *****/
+.contact-form form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+.contact-form input,
+.contact-form textarea{
+    padding:14px;
+    font-size:1rem;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+.contact-form textarea{
+    height:140px;
+}
+.contact-form button{
+    background:#74B43E;
+    color:#fff;
+    border:none;
+    padding:14px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+.contact-form button:hover{
+    background:#004e57;
+}
+
+/***** MAP BOX *****/
+.map-container{
+    border-radius:10px;
+    overflow:hidden;
+    border:2px solid #74B43E;
+    margin-top:15px;
+}
+
+/***** RESPONSIVE FOR MOBILE *****/
+@media(max-width:600px){
+    .contact-header h1{
+        font-size:1.8rem;
+    }
+    .contact-box{
+        width:92%;
+        padding:25px;
+    }
+    .contact-form input,
+    .contact-form textarea{
+        font-size:0.95rem;
+    }
+}
+</style>
+
+<header class="navbar">
+  <div class="container nav-container">
+
+    <div class="logo">
+    <a href="/"> <img src="assets/logo11.png" alt="GUD Logo"></a> 
+    </div>
+
+    <nav class="nav-menu">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/" >Home</a></li>
+        <li><a href="about.html" >About Us</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hamburger Menu -->
+    <div class="menu-toggle" id="mobile-menu">
+      <i class="fa fa-bars"></i>
+    </div>
+
+  </div>
+  <script>
+  const menu = document.getElementById("mobile-menu");
+  const navLinks = document.getElementById("nav-links");
+
+  menu.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+</header>
+
+
+
+
+<section class="contact-info contact-box">
+    <h2>Contact Information</h2>
+    <p>Reach out to us for medical product inquiries and support.</p>
+    <ul>
+        <li><strong>Address:</strong> Doha, Qatar</li>
+        <li><strong>Phone:</strong> +974 0000 0000</li>
+        <li><strong>Email:</strong> info@gulfmedicare.com</li>
+        <li><strong>Business Hours:</strong> Sun – Thu | 8:00 AM – 6:00 PM</li>
+    </ul>
+</section>
+
+<section class="contact-form contact-box">
+    <h2>Send Us a Message</h2>
+    <p>Fill the form below — Our team will respond shortly.</p>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<section class="map-section contact-box">
+    <h2>Find Us on Google Maps</h2>
+    <p>Locate our office in Doha, Qatar.</p>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps?q=Doha,+Qatar&output=embed"
+            width="100%" height="300" loading="lazy" allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+   <!-- Footer -->
+<footer>
+  <div class="container footer-content">
+    <div class="footer-section">
+      <div class="footer-logo-box">
+        <img src="assets/logo11.png" alt="Company Logo" />
+      </div>
+      <p class="footer-tagline">Delivering quality solutions with trust and innovation.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <div class="footer-links">
+        <a href="/index.html" >Home</a>
+        <a href="/about.html">About Us</a>
+        <a href="/Products.html">Products</a>
+        <!-- <a href="#">Projects</a> -->
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>Email: info@company.com</p>
+      <p>Phone: +91 98765 43210</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Gulfmedicareinnovation. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

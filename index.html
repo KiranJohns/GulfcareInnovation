@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gulfmedicareinnovation</title>
+  <link rel="icon" type="image/png" href="assets/logo11.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="container nav-container">
+
+    <div class="logo">
+      <a href="/"><img src="assets/logo11.png" alt="GUD Logo"></a>
+    </div>
+
+    <nav class="nav-menu">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/" class="active" >Home</a></li>
+        <li><a href="about.html" >About Us</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hamburger Menu -->
+    <div class="menu-toggle" id="mobile-menu">
+      <i class="fa fa-bars"></i>
+    </div>
+
+  </div>
+  <script>
+  const menu = document.getElementById("mobile-menu");
+  const navLinks = document.getElementById("nav-links");
+
+  menu.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+</header>
+
+
+  <!-- Hero Section -->
+<section class="hero">
+
+  <!-- Background Animation -->
+  <div class="hero-animation">
+    <div class="white">
+      <div class="squares">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Content -->
+  <div class="container hero-content">
+    <div class="hero-text">
+      <h1>Innovating Healthcare<br>for the Future</h1>
+      <p>Your <span>Trusted Partner</span> for <span>Comprehensive Medical Technology</span></p>
+     <a href="Products.html"><button class="btn">Explore Equipment</button></a>
+    </div>
+
+    <div class="hero-image">
+      <img src="assets/home-1.png" alt="Medical Equipment Illustration">
+    </div>
+  </div>
+
+</section>
+
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container features-grid">
+      <div class="feature">
+        <i class="fa-solid fa-stethoscope"></i>
+        <h4>Medical Equipment</h4>
+      </div>
+      <div class="feature">
+        <i class="fa-solid fa-gears"></i>
+        <h4>Service & Support</h4>
+      </div>
+      <div class="feature">
+        <i class="fa-solid fa-building"></i>
+        <h4>Project Management</h4>
+      </div>
+       <div class="feature">
+        <i class="fa-solid fa-screwdriver-wrench"></i>
+        <h4>Installation & Maintenance</h4>
+      </div>
+    </div>
+  </section>
+
+    <section class="vision-mission">
+    <img src="assets/doc2.jpg" alt="Doctors working together">
+    <div class="overlay"></div>
+    <div class="content">
+      <h2>Innovating for a Healthier Future</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Our Vision</h3>
+          <p>To be the leading provider of advanced medical technology solutions in Qatar, transforming healthcare and improving lives.</p>
+        </div>
+        <div class="card">
+          <h3>Our Mission</h3>
+          <p>We equip healthcare facilities with reliable, cutting-edge equipment, expert support, and a dedication to quality and innovation.</p>
+        </div>
+        <div class="card">
+          <h3>Quality Policy</h3>
+          <p>We are committed to delivering the highest quality medical equipment and services, ensuring safety, reliability, and customer satisfaction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer>
+  <div class="container footer-content">
+    <div class="footer-section">
+      <div class="footer-logo-box">
+        <img src="assets/logo11.png" alt="Company Logo" />
+      </div>
+      <p class="footer-tagline">Delivering quality solutions with trust and innovation.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <div class="footer-links">
+        <a href="/index.html" >Home</a>
+        <a href="/about.html">About Us</a>
+        <a href="/Products.html">Products</a>
+        <!-- <a href="#">Projects</a> -->
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>Email: info@company.com</p>
+      <p>Phone: +91 98765 43210</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Gulfmedicareinnovation. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

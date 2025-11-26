@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Gulf Medicare Innovation</title>
+  <link rel="icon" type="image/png" href="assets/logo11.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="container nav-container">
+
+    <div class="logo">
+     <a href="/"> <img src="assets/logo11.png" alt="GUD Logo"></a>
+    </div>
+
+    <nav class="nav-menu">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/" >Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hamburger Menu -->
+    <div class="menu-toggle" id="mobile-menu">
+      <i class="fa fa-bars"></i>
+    </div>
+
+  </div>
+  <script>
+  const menu = document.getElementById("mobile-menu");
+  const navLinks = document.getElementById("nav-links");
+
+  menu.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+</header>
+
+   <style>
+
+/* Hero Section */
+.about-hero {
+  position: relative;
+  height: 60vh;
+  background: url('assets/pexels-photo-8442105.jpeg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(44, 44, 44, 0.6); /* charcoal overlay */
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 2rem;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+/* About Section */
+.about-section {
+  padding: 80px 8%;
+  background-color: #f9f9f9;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1 1 500px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #239500; /* medical blue */
+}
+
+.about-text p {
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #555;
+  font-size: 1.2rem;
+}
+
+.about-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.03);
+}
+
+
+
+    </style>
+
+  <section class="about-hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>About Us</h1>
+      <p>Innovating Healthcare for a Better Tomorrow</p>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container">
+      <div class="about-text">
+        <h2>Who We Are</h2>
+        <p>
+          <strong>Gulf Medicare Innovation</strong> is a progressive medical company committed to delivering
+          the latest innovations and technologies in the healthcare sector. We serve as a
+          one-stop solution provider offering cost-effective, high-quality medical products
+          and services designed to support healthcare professionals, hospitals, and clinics
+          in improving patient care and outcomes.
+        </p>
+
+        <p>
+          Our focus is on introducing advanced medical innovations, ensuring accurate solutions,
+          and contributing to the continuous growth and excellence of the Gulf healthcare market
+          and the global medical community. With a strong emphasis on quality, reliability,
+          and service excellence, Gulf Medicare Innovation strives to enhance the efficiency
+          of the healthcare system and improve lives through better care, technology, and innovation.
+        </p>
+      </div>
+
+      <div class="about-image">
+        <img src="assets/photo-1579154204601-01588f351e67.avif" alt="Healthcare Innovation">
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+
+<footer>
+  <div class="container footer-content">
+    <div class="footer-section">
+      <div class="footer-logo-box">
+        <img src="assets/logo11.png" alt="Company Logo" />
+      </div>
+      <p class="footer-tagline">Delivering quality solutions with trust and innovation.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/about.html">About Us</a>
+        <a href="/Products.html">Products</a>
+        <!-- <a href="#">Projects</a> -->
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>Email: info@company.com</p>
+      <p>Phone: +91 98765 43210</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Gulfmedicareinnovation. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

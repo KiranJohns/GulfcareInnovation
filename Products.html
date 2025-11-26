@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gulfmedicareinnovation</title>
+   <link rel="icon" type="image/png" href="assets/logo11.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <style>
+   /* GLOBAL */
+
+
+body {
+  background: #f4f6f8;
+  color: #333;
+}
+
+/* SECTION STYLING */
+.ot-section {
+  padding: 60px 0;
+  background: #f4f6f8;
+}
+
+.ot-section .container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 25px; /* spacing from screen edges */
+}
+
+/* TITLE */
+.section-title {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  color: #4B1C7D;
+  margin-bottom: 12px;
+}
+
+.section-subtext {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 50px;
+  font-size: 17px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* PRODUCT GRID */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px; /* bigger spacing */
+}
+
+/* PRODUCT CARD */
+.product-box {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 22px;
+  text-align: center;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+  transition: 0.3s ease-in-out;
+  min-height: 340px; /* bigger card */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.product-box img {
+  width: 100%;
+  height: 260px; /* bigger image height */
+  object-fit: contain;
+  margin-bottom: 18px;
+}
+
+/* PRODUCT NAME */
+.product-box h4 {
+  font-size: 20px; /* bigger title font */
+  color: #4B1C7D;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* Hover Effect */
+.product-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.2);
+}
+
+/* RESPONSIVE RULES */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product-box {
+    min-height: 360px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .product-box {
+    min-height: auto;
+  }
+  .product-box img {
+    height: 210px;
+  }
+  .section-title {
+    font-size: 30px;
+  }
+}
+
+    </style>
+
+  <header class="navbar">
+  <div class="container nav-container">
+
+    <div class="logo">
+      <img src="assets/logo11.png" alt="GUD Logo">
+    </div>
+
+    <nav class="nav-menu">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/" >Home</a></li>
+        <li><a href="about.html" >About Us</a></li>
+        <li><a href="Products.html" class="active">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hamburger Menu -->
+    <div class="menu-toggle" id="mobile-menu">
+      <i class="fa fa-bars"></i>
+    </div>
+
+  </div>
+  <script>
+  const menu = document.getElementById("mobile-menu");
+  const navLinks = document.getElementById("nav-links");
+
+  menu.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+</header>
+
+
+ <section class="ot-section">
+  <div class="container">
+  <h2 class="section-title">Medical Equipment & Healthcare Solutions</h2>
+    <p class="section-subtext">
+     We deliver trusted and innovative healthcare equipment that enhances clinical capability and patient well-being. From diagnostics to treatment, our reliable solutions 
+     empower healthcare providers to achieve excellence in medical practice.
+    </p>
+
+    <div class="product-grid">
+
+    <div class="product-box">
+        <img src="images/operation-theater.webp" alt="Operation Theater">
+        <h4>Operation Theater</h4>
+    </div>
+
+    <div class="product-box">
+        <img src="images/scales.webp" alt="Medical Scales">
+        <h4>Medical Scales</h4>
+    </div>
+
+    <div class="product-box">
+        <img src="images/electric-wheel-chair.webp" alt="Hospital Furniture">
+        <h4>Hospital Furniture</h4>
+    </div>
+
+    <div class="product-box">
+        <img src="images/dental-chair-set.webp" alt="Dental Equipment">
+        <h4>Dental Equipment</h4>
+    </div>
+
+    <div class="product-box">
+        <img src="images/gynecology-electric-bed.webp" alt="Gynecology Equipment">
+        <h4>Gynecology Equipment</h4>
+    </div>
+
+    <div class="product-box">
+        <img src="images/ct-scan.webp" alt="Radiology Equipment">
+        <h4>Radiology Equipment</h4>
+    </div>
+
+    <div class="product-box">
+        <img src="images/mindray-m9-ultrasound.webp" alt="Ultrasound Machine">
+        <h4>Ultrasound Machine</h4>
+    </div>
+
+    <div class="product-box">
+        <img src="images/blood-gas-analyzer.webp" alt="Lab Equipment">
+        <h4>Lab Equipment</h4>
+    </div>
+
+    <div class="product-box">
+        <img src="images/bs-traction-table-350.webp" alt="Physiotherapy Equipment">
+        <h4>Physiotherapy Equipment</h4>
+    </div>
+
+    <div class="product-box">
+        <img src="images/caogulator-350.webp" alt="Ophthalmology Equipment">
+        <h4>Ophthalmology Equipment</h4>
+    </div>
+
+    <div class="product-box">
+        <img src="images/CRRT-Machine.webp" alt="Dialysis Equipment">
+        <h4>Dialysis Equipment</h4>
+    </div>
+
+    <div class="product-box">
+        <img src="images/Mercedes-ambulance.webp" alt="Ambulance Equipment">
+        <h4>Ambulance Equipment</h4>
+    </div>
+
+    <div class="product-box">
+        <img src="images/cardiac-monitor.webp" alt="Cardiology Equipment">
+        <h4>Cardiology Equipment</h4>
+    </div>
+
+    <div class="product-box">
+        <img src="images/ent-workstation.webp" alt="ENT Equipment">
+        <h4>ENT Equipment</h4>
+    </div>
+
+       <div class="product-box">
+        <img src="images/blood-bag.webp" alt="ENT Equipment">
+        <h4>Medical Consumables</h4>
+    </div>
+
+
+</div>
+
+  </div>
+</section>
+
+
+ 
+   <!-- Footer -->
+<footer>
+  <div class="container footer-content">
+    <div class="footer-section">
+      <div class="footer-logo-box">
+      <a href="/"> <img src="assets/logo11.png" alt="Company Logo" /></a> 
+      </div>
+      <p class="footer-tagline">Delivering quality solutions with trust and innovation.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/about.html">About Us</a>
+        <a href="/Products.html">Products</a>
+        <!-- <a href="#">Projects</a> -->
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>Email: info@company.com</p>
+      <p>Phone: +91 98765 43210</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Gulfmedicareinnovation. All rights reserved.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>

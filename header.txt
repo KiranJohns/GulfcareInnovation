@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <style>
+        /* --------------------------------------------- NAVBAR --------------------------------------------- */
+.navbar {
+  background: #fff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  width: 92%;
+  margin: auto;
+}
+
+.logo img {
+  height: 80px;
+}
+
+/* Push nav to center/right and hamburger to far right */
+.nav-menu {
+  flex: 1;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  color: #4B1C7D;
+  border-bottom: 2px solid #74B43E;
+  padding-bottom: 3px;
+}
+
+/* Dropdown */
+.dropdown { position: relative; }
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  min-width: 220px;
+  background: #fff;
+  padding: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.dropdown:hover .dropdown-menu { display: block; }
+
+/* Hamburger */
+.menu-toggle {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+/* ---------------- MOBILE ---------------- */
+@media(max-width: 900px) {
+
+  .menu-toggle { display: block; }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    display: none;
+    background: #fff;
+    padding: 20px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 10px 20px;
+    width: 100%;
+    text-align: right;
+  }
+
+  .dropdown-menu {
+    position: static;
+    background: #f6f6f6;
+    box-shadow: none;
+  }
+}
+
+    </style>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="container nav-container">
+
+    <div class="logo">
+      <img src="assets/logo11.png" alt="GUD Logo">
+    </div>
+
+    <nav class="nav-menu">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="dropdown">
+          <a href="#">Products <i class="fa fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Medical Equipment</a></li>
+            <li><a href="#">Hospital Furniture</a></li>
+            <li><a href="#">Laboratory Equipment</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hamburger Menu -->
+    <div class="menu-toggle" id="mobile-menu">
+      <i class="fa fa-bars"></i>
+    </div>
+
+  </div>
+</header>
+
+<script>
+  const menu = document.getElementById("mobile-menu");
+  const navLinks = document.getElementById("nav-links");
+
+  menu.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+
+</body>
+</html>
