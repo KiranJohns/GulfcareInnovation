@@ -236,7 +236,7 @@ background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255
   width: 1em;
   height: 1em;
   transform: translateY(100%);
-  background: #c0bebe;
+  background: #cbcfd5;
 }
 
 .squares .square:nth-child(2) {
@@ -315,7 +315,7 @@ background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255
 --------------------------------------------- */
 .features {
   padding: 50px 0;
-  background: #f2f0f0;
+  background: #e3e6e9;
   margin-bottom: 1rem;
 }
 
